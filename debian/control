@@ -1,5 +1,5 @@
 Source: hello-world
-Section: unknown
+Section: misc
 Priority: optional
 Maintainer: Sebastian Schulz <16666034+seb-schulz@users.noreply.github.com>
 Build-Depends: debhelper-compat (= 13)
@@ -9,4 +9,4 @@ Package: hello-world
 Architecture: amd64
 Depends: ${shlibs:Depends}, ${misc:Depends}
 Description: Example to how to build a simple debian package
-  It shows how to build a debian package
+ It shows how to build a debian package
