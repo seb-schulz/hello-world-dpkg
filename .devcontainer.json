@@ -1,0 +1,23 @@
+{
+  "name": "hello-world-dpkg",
+  "image": "mcr.microsoft.com/devcontainers/base:bookworm",
+  "features": {
+    "ghcr.io/devcontainers-contrib/features/apt-get-packages:1": {
+      "packages": "bash-completion,build-essential,devscripts,lintian"
+    },
+    "ghcr.io/devcontainers-community/npm-features/prettier:1": {}
+  },
+  "customizations": {
+    "vscode": {
+      "settings": {},
+      "extensions": [
+        "ms-vscode.cpptools-extension-pack",
+        "esbenp.prettier-vscode"
+      ]
+    }
+  },
+  "runArgs": [
+    "--userns=keep-id"
+  ],
+  "containerUser": "vscode"
+}

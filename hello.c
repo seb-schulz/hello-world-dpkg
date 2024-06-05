@@ -1,5 +1,6 @@
 #include <stdio.h>
-int main() {
+int main()
+{
     printf("hello packaged world\n");
     return 0;
 }
