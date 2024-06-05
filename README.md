@@ -16,3 +16,9 @@ For more information, checkout [build routine](Dockerfile).
 - Run `hello-world` and check with `which hello-world` path of binary
 - Test manpage with `man hello-world`
 - Uninstall entire package with `sudo apt purge hello-world`
+
+## Links
+
+- <https://www.debian.org/doc/debian-policy/index.html>
+- <https://www.debian.org/doc/manuals/maint-guide/index.en.html>
+- <https://manpages.debian.org/testing/dpkg-dev/dpkg-buildpackage.1.en.html>
