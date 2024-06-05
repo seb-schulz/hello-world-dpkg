@@ -6,3 +6,4 @@ debian/files
 debian/hello-world.substvars
 debian/hello-world/
 dist
+hello-world.1

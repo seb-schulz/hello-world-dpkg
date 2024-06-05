@@ -3,7 +3,7 @@
   "image": "mcr.microsoft.com/devcontainers/base:bookworm",
   "features": {
     "ghcr.io/devcontainers-contrib/features/apt-get-packages:1": {
-      "packages": "bash-completion,build-essential,devscripts,lintian,debhelper"
+      "packages": "bash-completion,build-essential,devscripts,lintian,debhelper,pandoc"
     },
     "ghcr.io/devcontainers-community/npm-features/prettier:1": {}
   },

@@ -7,3 +7,8 @@ export
 
 %:
 	dh $@ --without autoreconf
+
+execute_before_dh_auto_build:
+ifeq (,$(findstring nodoc,$(DEB_BUILD_PROFILES)))
+	pandoc -t man -s -o $(CURDIR)/hello-world.1 $(CURDIR)/hello-world.md
+endif

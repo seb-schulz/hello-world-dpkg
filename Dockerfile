@@ -3,7 +3,7 @@ ARG DEBIAN_TAG=testing
 FROM docker.io/debian:${DEBIAN_TAG} AS build
 
 RUN apt-get update \
-  && DEBIAN_FRONTEND=noninteractive apt-get install --no-install-recommends -y build-essential devscripts debhelper \
+  && DEBIAN_FRONTEND=noninteractive apt-get install --no-install-recommends -y build-essential devscripts debhelper pandoc \
   && rm -rf /var/lib/apt/lists/*
 
 WORKDIR /workspaces
