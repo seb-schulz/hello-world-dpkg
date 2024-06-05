@@ -3,7 +3,7 @@
   "image": "mcr.microsoft.com/devcontainers/base:bookworm",
   "features": {
     "ghcr.io/devcontainers-contrib/features/apt-get-packages:1": {
-      "packages": "bash-completion,build-essential,devscripts,lintian"
+      "packages": "bash-completion,build-essential,devscripts,lintian,debhelper"
     },
     "ghcr.io/devcontainers-community/npm-features/prettier:1": {}
   },
@@ -19,5 +19,6 @@
   "runArgs": [
     "--userns=keep-id"
   ],
+  "onCreateCommand": "mkdir -p /workspaces && sudo chown -R 1000:1000 /workspaces",
   "containerUser": "vscode"
 }

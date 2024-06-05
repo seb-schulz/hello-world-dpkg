@@ -1,2 +1,8 @@
-hello
+hello-world
 *.deb
+debian/.debhelper/
+debian/debhelper-build-stamp
+debian/files
+debian/hello-world.substvars
+debian/hello-world/
+dist
